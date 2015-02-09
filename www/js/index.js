@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var app = {
+/*var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -47,6 +47,32 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+*/
+
+//Location content
+var lc;
+//PhoneGap Ready variable
+var pgr = false;
+var path = '';
+
+window.addEventListener('load', function () {
+    document.addEventListener("deviceReady", onDeviceReady, false);
+}, false);
+
+function onDeviceReady() {
+    try {
+        //Get a handle we'll use to adjust the accelerometer
+        //content
+        lc = document.getElementById("locationInfo");
+        //Set the variable that lets other parts of the program
+        //know that PhoneGap is initialized
+        pgr = true;
+    }
+    catch (ex) {
+        alert("deviceReady error: "+ex.message);
+    }
+}
+
 
 /*************************** EXIT APP - INI ***************************/
 function exitApp() {
