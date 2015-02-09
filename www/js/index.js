@@ -55,6 +55,38 @@ function exitApp() {
 /*************************** EXIT APP - END ***************************/
 
 function viewCalendar() {
-    alert('entra viewCalendar');
+    alert('entra en viewCalendar');
+
+    // prep some variables
+    var startDate = new Date("September 24, 2013 13:00:00");
+    var endDate = new Date("September 24, 2013 14:30:00");
+    var title = "My nice event";
+    var location = "Home";
+    var notes = "Some notes about this event.";
+    var success = function(message) { alert("Success: " + JSON.stringify(message)); };
+    var error = function(message) { alert("Error: " + message); };
+
+    // create a calendar (iOS only for now)
+    alert('antes de createCalendar');
+    window.plugins.calendar.createCalendar(calendarName,onSuccess,onError);
+    alert('después de createCalendar');
+
 }
 
+
+/*************************** LABEL SUCCESS/ERROR - INI ***************************/
+// onSuccess Callback
+//
+function onSuccess(action) {
+    console.log(action + " :Audio Success");
+}
+
+// onError Callback
+//
+function onError(error) {
+    if (error >0){
+        alert('code: '    + error.code    + '\n' +
+        'message: ' + error.message + '\n');
+    }
+}
+/*************************** LABEL SUCCESS/ERROR - END ***************************/
