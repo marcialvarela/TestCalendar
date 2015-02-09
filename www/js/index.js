@@ -80,7 +80,7 @@ function exitApp() {
 }
 /*************************** EXIT APP - END ***************************/
 
-function viewCalendar() {
+function verCalendario() {
     alert('entra en viewCalendar');
 
     // prep some variables
