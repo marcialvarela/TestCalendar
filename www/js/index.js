@@ -82,8 +82,8 @@ function exitApp() {
 
 function verCalendario() {
     // prep some variables
-    var startDate = new Date("February 15, 2015 13:00:00");
-    var endDate = new Date("February 15, 2015 14:30:00");
+    var startDate = new Date("July 19, 2013 8:00:00");
+    var endDate = new Date("July 19, 2013 18:00:00");
     var title = "Este es mi nuevo evento";
     var location = "Casa";
     var notes = "Estas son las notas de mi nuevo evento";
@@ -96,7 +96,7 @@ function verCalendario() {
     //function(title, location, notes, startDate, endDate, successCallback, errorCallback) {
     //window.plugins.createEvent(title, location, notes, startDate, endDate, successCallback, errorCallback);
     window.plugins.calendar.createEvent(title, location, notes, startDate, endDate, onSuccess, onError);
-    
+
 }
 
 
