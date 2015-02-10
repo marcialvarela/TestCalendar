@@ -85,10 +85,13 @@ function verCalendario() {
 
     // prep some variables
     var startDate = new Date("September 24, 2013 13:00:00");
+    alert(startDate);
     var endDate = new Date("September 24, 2013 14:30:00");
+    alert(endDate);
     var title = "My nice event";
     var location = "Home";
     var notes = "Some notes about this event.";
+    alert(notes);
     var success = function(message) { alert("Success: " + JSON.stringify(message)); };
     var error = function(message) { alert("Error: " + message); };
 
