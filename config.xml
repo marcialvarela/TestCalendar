@@ -45,7 +45,7 @@
 
     <!-- Este plugin si que funciona-->
     <!-- <gap:plugin name="nl.x-services.plugins.calendar.berserk" version="3.2" /> -->
-    <gap:plugin name="com.test.plugin.calendarPlugin" />
+    <gap:plugin name="calendarPlugin" value="com.test.plugin.calendarPlugin"/>
 
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
