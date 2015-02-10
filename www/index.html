@@ -31,16 +31,18 @@
     </head>
     <body>
         <div class="app"  style="top:100px; left: 120px;" align="center">
-            <h1>Test Calendar</h1>
             <table cellpadding="0" cellspacing="0" border="0" width="520px" align="center" style="background-color: #eeeeff; height: 55px;">
+                <tr>
+                    <td colspan="4" style="height: 40px"></td>
+                </tr>
                 <tr align="center">
-                    <td colspan="4" align="center">
-                        <img src="calendar.png" align="center" width="210px" height="210px" border="none">
-                        <br/>
+                    <td colspan="2" align="center">
+                        <img src="calendar.png" align="center" width="120px" height="120px" border="none">
+                    </td>
+                    <td colspan="2" align="center">
                         <label for="a1" style="font-size: medium">Calendar</label>
                         <br/>
                         <label for="a1" style="font-size: small">(PhoneGap platform)</label>
-                        <br/>
                         <br/>
                     </td>
                 </tr>
@@ -64,6 +66,7 @@
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/calendar.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
