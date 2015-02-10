@@ -43,9 +43,9 @@
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
 
-    <!-- Este plugin si que funciona-->
+    <!-- Este plugin (externo) si que funciona-->
     <!-- <gap:plugin name="nl.x-services.plugins.calendar.berserk" version="3.2" /> -->
-    <gap:plugin name="calendarPlugin" value="com.test.plugin.calendarPlugin"/>
+
 
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
@@ -82,5 +82,9 @@
     </feature>
     -->
 
+    <plugins>
+        <plugin name="calendarPlugin" value="com.test.plugin.calendarPlugin" />
+    </plugins>
+    
     <access origin="*" />
 </widget>
