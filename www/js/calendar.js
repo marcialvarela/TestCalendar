@@ -1,6 +1,7 @@
-alert('calendarPlugin');
 var calendarPlugin = {
     createEvent: function(title, location, notes, startDate, endDate, successCallback, errorCallback) {
+        alert('entra en createEvent');
+        alert(title);
         cordova.exec(
             successCallback,
             errorCallback,
