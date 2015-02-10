@@ -82,13 +82,11 @@ function exitApp() {
 
 function verCalendario() {
     // prep some variables
-    alert('entra verCalendario');
     var startDate = new Date("July 19, 2013 8:00:00");
     var endDate = new Date("July 19, 2013 18:00:00");
     var title = "Este es mi nuevo evento";
     var location = "Casa";
     var notes = "Estas son las notas de mi nuevo evento";
-    alert(notes);
     var success = function(message) { alert("Success: " + JSON.stringify(message)); };
     var error = function(message) { alert("Error: " + message); };
 
@@ -100,8 +98,6 @@ function verCalendario() {
     //window.plugins.calendar.createEvent(title, location, notes, startDate, endDate, onSuccess, onError);
     alert('Antes window.calendarPlugin');
     //function(title, location, notes, startDate, endDate, successCallback, errorCallback)
-    window.calendarPlugin.createEvent(title, location, notes, startDate, endDate, onSuccess, onError);
-
     window.calendarPlugin.createEvent(title, location, notes, startDate, endDate, onSuccess, onError);
     alert('Después window.calendarPlugin');
 
