@@ -81,29 +81,22 @@ function exitApp() {
 /*************************** EXIT APP - END ***************************/
 
 function verCalendario() {
-    alert('entra en viewCalendar');
-
     // prep some variables
-    var startDate = new Date("September 24, 2013 13:00:00");
-    alert(startDate);
-    var endDate = new Date("September 24, 2013 14:30:00");
-    alert(endDate);
-    var title = "My nice event";
-    var location = "Home";
-    var notes = "Some notes about this event.";
-    alert(notes);
+    var startDate = new Date("February 15, 2015 13:00:00");
+    var endDate = new Date("February 15, 2015 14:30:00");
+    var title = "Este es mi nuevo evento";
+    var location = "Casa";
+    var notes = "Estas son las notas de mi nuevo evento";
     var success = function(message) { alert("Success: " + JSON.stringify(message)); };
     var error = function(message) { alert("Error: " + message); };
 
     // create a calendar (iOS only for now)
-    alert('antes de createCalendar');
     //window.plugins.calendar.createCalendar(calendarName,onSuccess,onError);
 
     //function(title, location, notes, startDate, endDate, successCallback, errorCallback) {
     //window.plugins.createEvent(title, location, notes, startDate, endDate, successCallback, errorCallback);
     window.plugins.calendar.createEvent(title, location, notes, startDate, endDate, onSuccess, onError);
-    alert('después de createCalendar');
-
+    
 }
 
 
