@@ -98,7 +98,11 @@ function verCalendario() {
     //function(title, location, notes, startDate, endDate, successCallback, errorCallback) {
     //window.plugins.createEvent(title, location, notes, startDate, endDate, successCallback, errorCallback);
     //window.plugins.calendar.createEvent(title, location, notes, startDate, endDate, onSuccess, onError);
+    alert('Antes window.calendarPlugin');
     window.calendarPlugin.createEvent(title, location, notes, startDate, endDate, onSuccess, onError);
+    alert('Después window.calendarPlugin');
+    alert('onSuccess: ' + onSuccess);
+    alert('onError: ' + onError);
 
 }
 
