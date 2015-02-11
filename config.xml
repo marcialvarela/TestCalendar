@@ -82,13 +82,10 @@
     </feature>
     -->
 
-    <!-- android -->
+    <!-- android
     <feature name="calendarPlugin">
         <param name="android-package" value="com.test.plugin.calendarPlugin"/>
     </feature>
-
-    <plugin name="calendarPlugin" value="com.test.plugin.calendarPlugin"/>
-
-    <access origin="*" />
+    -->
 
 </widget>
