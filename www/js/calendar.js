@@ -16,7 +16,8 @@ var calendarPlugin = {
                     "endTimeMillis": endDate.getTime()
                 }]
             );
-            alert('js:pasa cordova.exec');
+            alert('successCallback: ' + successCallback);
+            alert('errorCallback: ' + errorCallback);
         }
         catch (ex) {
             alert("calendarPlugin.createEvent error: "+ex.message);
