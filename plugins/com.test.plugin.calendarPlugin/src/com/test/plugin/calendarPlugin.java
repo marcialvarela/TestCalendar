@@ -22,6 +22,7 @@ import org.apache.cordova.CordovaPlugin;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import javax.swing.JOptionPane;
 
 import android.content.Intent;
 
@@ -34,6 +35,7 @@ public class calendarPlugin extends CordovaPlugin
 	public boolean execute(String action, JSONArray args,
 			CallbackContext callbackContext) throws JSONException {
 		try {
+			JOptionPane.showMessageDialog(null, "Entra en el Try", "Java", JOptionPane.MESSAGE_ICON);
 		    if (ACTION_ADD_CALENDAR_ENTRY.equals(action)) { 
 		             JSONObject arg_object = args.getJSONObject(0);
 		             Intent calIntent = new Intent(Intent.ACTION_EDIT)

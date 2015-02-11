@@ -13,7 +13,8 @@ var calendarPlugin = {
                 "startTimeMillis": startDate.getTime(),
                 "endTimeMillis": endDate.getTime()
             }]
-        ); 
+        );
+        alert('js:pasa cordova.exec');
      }
 }
 module.exports = calendarPlugin;
