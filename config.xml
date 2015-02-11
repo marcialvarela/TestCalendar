@@ -87,6 +87,9 @@
         <param name="android-package" value="com.test.plugin.calendarPlugin"/>
     </feature>
 
+    <js-module src="www/js/calendar.js" name="calendarPlugin">
+        <clobbers target="window.calendarPlugin" />
+    </js-module>
 
     <access origin="*" />
 </widget>
