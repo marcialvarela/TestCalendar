@@ -45,6 +45,7 @@
 
     <!-- Este plugin (externo) si que funciona-->
     <!-- <gap:plugin name="nl.x-services.plugins.calendar.berserk" version="3.2" /> -->
+    <gap:plugin name="org.apache.cordova.CordovaPlugin" />
 
 
     <icon src="icon.png" />
@@ -82,11 +83,11 @@
     </feature>
     -->
 
-    <!-- android
+    <!-- android -->
     <feature name="calendarPlugin">
         <param name="android-package" value="com.test.plugin.calendarPlugin"/>
     </feature>
-    -->
+
 
     <access origin="*" />
 </widget>
