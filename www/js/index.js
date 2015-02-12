@@ -82,8 +82,8 @@ function exitApp() {
 
 function verCalendario() {
     // prep some variables
-    var startDate = new Date("July 19, 2013 8:00:00");
-    var endDate = new Date("July 19, 2013 18:00:00");
+    var startDate = new Date("July 19, 2015 8:00:00");
+    var endDate = new Date("July 19, 2015 18:00:00");
     var title = "Este es mi nuevo evento";
     var location = "Casa";
     var notes = "Estas son las notas de mi nuevo evento";
