@@ -106,8 +106,8 @@ function verCalendario() {
 /*************************** LABEL SUCCESS/ERROR - INI ***************************/
 // onSuccess Callback
 //
-function onSuccess(action) {
-    console.log(action + " :Audio Success");
+function onSuccess() {
+    console.log('onSuccess');
 }
 
 // onError Callback
