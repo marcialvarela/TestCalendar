@@ -1,8 +1,7 @@
 var calendarPlugin = {
     createEvent: function(title, location, notes, startDate, endDate, successCallback, errorCallback) {
-        alert('js:calendarPlugin title: ' + title );
         try{
-            alert('entra try');
+            alert('js:calendarPlugin: entra try');
             cordova.exec(
                 successCallback,
                 errorCallback,
@@ -16,8 +15,6 @@ var calendarPlugin = {
                     "endTimeMillis": endDate.getTime()
                 }]
             );
-            alert('successCallback: ' + successCallback);
-            alert('errorCallback: ' + errorCallback);
         }
         catch (ex) {
             alert("calendarPlugin.createEvent error: "+ex.message);

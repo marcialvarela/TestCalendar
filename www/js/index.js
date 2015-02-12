@@ -96,11 +96,18 @@ function verCalendario() {
     //function(title, location, notes, startDate, endDate, successCallback, errorCallback) {
     //window.plugins.createEvent(title, location, notes, startDate, endDate, successCallback, errorCallback);
     //window.plugins.calendar.createEvent(title, location, notes, startDate, endDate, onSuccess, onError);
-    alert('Antes window.calendarPlugin');
     //function(title, location, notes, startDate, endDate, successCallback, errorCallback)
-    window.calendarPlugin.createEvent(title, location, notes, startDate, endDate, onSuccess, onError);
-    alert('Después window.calendarPlugin');
+    window.calendarPlugin.createEvent(title, location, notes, startDate, endDate, CalendarOK, CalendarError);
 
+}
+
+
+function CalendarOK(){
+    alert('CalendarOK');
+}
+
+function CalendarError(){
+    alert('CalendarError');
 }
 
 function eEcho(){
