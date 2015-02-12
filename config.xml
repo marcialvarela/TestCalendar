@@ -75,9 +75,14 @@
     <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
 
     <plugin name="calendarPlugin" value="com.test.plugin.calendarPlugin"/>
+    <plugin name="Echo" value="com.test.plugin.Echo"/>
 
     <feature name="calendarPlugin">
         <param name="android-package" value="com.test.plugin.calendarPlugin"/>
+    </feature>
+
+    <feature name="Echo">
+        <param name="android-package" value="com.test.plugin.Echo"/>
     </feature>
 
     <!--

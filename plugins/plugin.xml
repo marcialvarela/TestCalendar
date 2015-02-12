@@ -15,9 +15,14 @@
 
     <!-- android -->
     <platform name="android">
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="calendarPlugin">
                 <param name="android-package" value="com.test.plugin.calendarPlugin"/>
+            </feature>
+        </config-file>
+        <config-file target="config.xml" parent="/*">
+            <feature name="Echo">
+                <param name="android-package" value="com.test.plugin.Echo"/>
             </feature>
         </config-file>
 		<config-file target="AndroidManifest.xml" parent="/manifest">
