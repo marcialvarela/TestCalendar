@@ -105,7 +105,7 @@ function verCalendario() {
 
 function eEcho(){
     alert('eEcho');
-    window.echo("echome", function(echoValue) {
+    window.echo("echo", function(echoValue) {
         console.log("AQUI 2");
         navigator.notification.alert(echoValue == "echome"); // should alert true.
     });
